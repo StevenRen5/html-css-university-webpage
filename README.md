@@ -1,6 +1,6 @@
 # Responsive University Website
 
-This project is a fully responsive multi-page university website built using **HTML**, **CSS**, and a bit of **JavaScript**. It was created by following the [Easy Tutorials YouTube Course](https://www.youtube.com/watch?v=oYRda7UtuhA&t=2721s), and served as my second web development project to strengthen my frontend skills.
+This project is a fully responsive multi-page university website built using **HTML**, **CSS**, and a bit of **JavaScript**. It was created by following the [GreatStack YouTube Tutorial](https://www.youtube.com/watch?v=oYRda7UtuhA&t=2721s), and served as my second web development project to strengthen my frontend skills.
 
 ## Features
 
