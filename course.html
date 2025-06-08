@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Meta elements help with scaling website to adjust to different screen sizes-->
+                            <!--name="viewport" targets the visible area of a webpage on a device screen -->
+                            <!--content="width=device-width sets page to match screen width -->
+                            <!-- initial-scale-1.0: sets initial zoom level to 1 (100%, no zoom) when page first loads-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Website Design</title>
+
+        
+        <!-- certain properties from the homepage.css are used in the about.html so we link that css here too-->
+        <link rel="stylesheet" href="style/homepage.css">
+        <link rel="stylesheet" href="style/aboutus.css">
+        <link rel="stylesheet" href="style/course.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Search "font awesome 4 cdn" to get link. 
+        Allows us to use icons easily. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+
+
+
+    </head>
+    
+    <body>
+        <!-- COURSE SUB-HEADER SECTION -->
+
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="imgs/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i> <!-- from font awesome 4, this adds an icon (the X icon) 
+                        When clicking on the X icon, we will hide the menu (some JavaScript code) -->
+
+                        <ul> <!-- unordered list element-->
+                            <li><a href="index.html">HOME</a></li> <!-- <li> is a list item-->
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="course.html">COURSE</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i> <!-- from font awesome 4, this adds an icon (the three horizontal lines)-->
+            </nav>
+            <h1>Our Courses</h1>
+        </section>
+
+        <!-- COURSE SECTION -->
+
+        <section class="course">
+            <h1>Courses We Offer</h1>
+            <p>We offer a variety of courses in tech including web development, software engineering, and data science.</p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>These courses build a strong foundation in coding and problem-solving skills.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>Our degree programs cover advanced technical knowledge and hands-on experience.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Post Graduation</h3>
+                    <p>Postgraduate courses offer specialization and prepare you for leadership roles.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FACILITIES SECTION -->
+
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>Our campus is equipped with modern labs, libraries, and collaborative spaces to enhance your educational experience.</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="imgs/library.png" alt="">
+                    <h3>World Class Library</h3>
+                    <p>Our library offers thousands of books, digital resources, and quiet study areas for students.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="imgs/basketball.png" alt="">
+                    <h3>Largest Play Ground</h3>
+                    <p>We provide top-notch sports facilities to encourage physical fitness and team spirit.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="imgs/cafeteria.png" alt="">
+                    <h3>Tasty and Healthy Food</h3>
+                    <p>Our cafeteria offers a variety of healthy and delicious meals in a clean, welcoming environment.</p>
+                </div>
+            </div>
+            </section>
+
+
+
+
+        <!-- FOOTER SECTION-->
+
+         <section class="footer">
+            <h4>About Us</h4>
+            <p>At our university, we are committed to shaping the next generation of tech leaders through innovative and hands-on programming education. Our curriculum is designed to keep pace with the fast-evolving tech industry, covering everything from web development to AI and software engineering. With expert instructors and real-world projects, students graduate ready to thrive in today’s digital world.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with  <i class="fa fa-heart-o"></i> Easy Tutorials</p>
+         </section>
+
+
+
+
+
+
+        <!--JAAVSCRIPT for toggling Menu-->
+        <script> // can write JS code here //
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0"; // .style.right are css properties, so sets CSS right: 0, so we can see the menu again 
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+        
+    </body>
+</html>
