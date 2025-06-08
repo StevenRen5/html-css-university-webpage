@@ -21,3 +21,5 @@ Through this project, I:
 - Practiced multi-page navigation structure
 - Improved my understanding of using percent-based values (e.g., width: _%, flex-basis: _% to build responsive layouts that adapt to different screen sizes 
 - Gained basic experience in adding interactivity with JavaScript
+
+[View Website](https://stevenren5.github.io/html-css-university-webpage/)
